@@ -1,1 +1,125 @@
+:root {
+    --text-color: #333;
+    --background-color: #f7f7f7;
+    --link-color: #0066cc;
+    --link-hover-color: #004488;
+    --header-footer-bg: #fff;
+    --border-color: #ccc;
+}
 
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Layout e contenitori --- */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+/* --- Intestazione e Navigazione --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--header-footer-bg);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--link-color);
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+/* --- Tipografia --- */
+h2 {
+    font-size: 2em;
+    font-weight: 300;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.deadline {
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #c00;
+}
+
+/* --- Piè di pagina --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--header-footer-bg);
+    border-top: 1px solid var(--border-color);
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Media Queries per layout responsivo */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}
