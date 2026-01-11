@@ -52,12 +52,13 @@ background: linear-gradient(90deg,rgba(122, 188, 109, 1) 0%, rgba(86, 181, 164, 
 .LBU {height: 120px;}
 .BEAN {height: 100px;}
 .SF {height: 60px;}
+.SEAMUS {height: 200px;}
 
 .img {transition: 0.15s;}
 
 .img:hover {filter: brightness(0.95); scale: 0.95;}
 
-.logos {display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 5rem; width: 50%;}
+.logos {display: flex; flex-direction: row; align-items: center; justify-content: center; width: 100%;}
 
 footer {display: flex; justify-content: center; align-items: center; color: #ffffff;
 flex-direction: column;}
