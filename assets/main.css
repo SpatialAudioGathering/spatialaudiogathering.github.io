@@ -145,6 +145,16 @@ td.sponsor img{width: 100%}
 
 footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
+
+.outlineRow {display: grid; grid-template:  auto/1fr 1fr; align-items: baseline;}
+.outlineTime {color: #ffffff; font-size: 2.5em; border-right: 4px solid white; padding: 1em 0.5em; grid-area: 0/0/1/1; text-align: right;}
+.outlineTitle {color: #ffffff; font-size: 2em; padding: 1em 0 01em 0.75em; grid-area: 1/0/2/1;}
+
+.OutlineRow2 {margin-bottom: 4em; display: flex;}
+.outlineTxt {color: #ffffff; font-size: 2em;}
+.Lvr {border-right: 3px solid white; padding-right: 0.5em; margin-right: 0.5em;}
+.Rvr {border-left: 3px solid white; padding-left: 0.5em; margin-left: 0.5em;}
+
 /* My hacky way of making the site mobile-friendly */
 @media only screen and (max-width: 1100px) {
     .logo{height: 350px;}
@@ -158,12 +168,3 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 }
 
-
-.outlineRow {display: grid; grid-template:  auto/1fr 1fr; align-items: baseline;}
-.outlineTime {color: #ffffff; font-size: 2.5em; border-right: 4px solid white; padding: 1em 0.5em; grid-area: 0/0/1/1; text-align: right;}
-.outlineTitle {color: #ffffff; font-size: 2em; padding: 1em 0 01em 0.75em; grid-area: 1/0/2/1;}
-
-.OutlineRow2 {margin-bottom: 4em; display: flex;}
-.outlineTxt {color: #ffffff; font-size: 2em;}
-.Lvr {border-right: 3px solid white; padding-right: 0.5em; margin-right: 0.5em;}
-.Rvr {border-left: 3px solid white; padding-left: 0.5em; margin-left: 0.5em;}
