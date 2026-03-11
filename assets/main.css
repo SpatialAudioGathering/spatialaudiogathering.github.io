@@ -26,7 +26,8 @@
 }
 
 body{
-background: linear-gradient(90deg,rgba(122, 188, 109, 1) 0%, rgba(86, 181, 164, 1) 52%, rgba(69, 129, 192, 1) 100%);
+    background: linear-gradient(90deg,rgba(122, 188, 109, 1) 0%, rgba(86, 181, 164, 1) 52%, rgba(69, 129, 192, 1) 100%);
+    background-color: black;
     background-size: cover;
     background-attachment: fixed;
     text-align:left;
@@ -177,15 +178,24 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
   transform: rotate(0deg);
 }
   
-
-
  .detailBox summary {
-  list-style: none;          /* removes default arrow in Firefox */
+  list-style: none;          
   cursor: pointer;
 }
 
 .detailBox summary::-webkit-details-marker {
-  display: none;             /* removes default arrow in Chrome/Safari */
+  display: none;             
+}
+
+
+.stickyBox {
+    display: flex; position: fixed; top: 2em; left: 2em;
+    flex-direction: column; gap: 0.25em;
+}
+
+.concertNav {
+    cursor: pointer;
+    font-weight: 200;
 }
 
 /* My hacky way of making the site mobile-friendly */
