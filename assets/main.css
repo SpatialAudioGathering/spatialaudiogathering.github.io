@@ -104,7 +104,7 @@ th,td{
 }
 
 .logo{ max-width: 100% ;height: 250px; display: flex; align-self: center; object-fit: scale-down; }
-.date{ color: #ffffff; font-size: 3rem; font-weight: 600; margin: 4rem 0 2rem; text-align: center; font-family: "Kumbh Sans", sans-serif;}
+.date{ color: #ffffff; font-size: 3rem; font-weight: 600; margin: 3rem 0 2rem; text-align: center; font-family: "Kumbh Sans", sans-serif;}
 
 /* Website Banner */
 .banner {position: relative; font-family: "Kumbh Sans", sans-serif; margin-top: 50px; display: flex; flex-direction: column;}
@@ -158,10 +158,10 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 .bottom {margin-bottom: 2em;}
 
-.detailBox {margin-top: 4em;}
+.detailBox {margin-top: 4em; position-area: center center;}
 
 .piece {color: #ffffff; font-size: 1.75em; line-height: 1.25em;}
-.author {font-weight: 200; display: inline;}
+.author {font-weight: 200; font-size: 1em; display: inline;}
 .subHeading {margin-top: 0.2em; font-size: 0.75em; font-weight: 200;}
 .details {margin-top: 1em; text-align: left; font-weight: 200; color: white;}
 .detailHr {display: flex; border: 0.5px solid white; margin-top: 1em; width: 50%;}
@@ -173,6 +173,8 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
   font-size: 0.6em;
   transform: rotate(-90deg);
 }
+
+.red {color: red;}
 
 .detailBox[open] .more {
   transform: rotate(0deg);
@@ -199,17 +201,3 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     font-weight: 200;
     width: 10em;
 }
-
-/* My hacky way of making the site mobile-friendly */
-@media only screen and (max-width: 1100px) {
-    .logo{height: 350px;}
-    body{width: 90%; margin-bottom: 10rem;}
-    h2{font-size:3.00em;}
-    p, ul{font-size:2em; line-height:1.5em;}
-    th,td,tr{font-size:1.5em; line-height:1.5em;}
-    td.date{font-size:1em; padding-top:0.5em;}
-    .navigation{font-size:1.5em; flex-direction: row;}
-    table.footer{font-size:0.33em; text-align: center;}
-
-}
-
