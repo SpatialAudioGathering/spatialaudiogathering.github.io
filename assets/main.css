@@ -60,7 +60,7 @@ body{
 
 .img:hover {filter: brightness(0.95); scale: 0.95;}
 
-.logos {display: flex; flex-direction: row; align-items: center; justify-content: center; width: 100%;}
+.logos {display: flex; flex-direction: row; align-items: center; justify-content: center; width: 100%; z-index: 0;}
 
 footer {display: flex; justify-content: center; align-items: center; color: #ffffff;
 flex-direction: column;}
@@ -104,8 +104,8 @@ th,td{
     /*border: 1px solid black;*/
 }
 
-.logo{ max-width: 100% ;height: max(20vw, 7em); display: flex; align-self: center; object-fit: scale-down; }
-.date{ color: #ffffff; font-size: max(2.5vw, 2em); font-weight: 400; margin: 3rem 0 2rem; text-align: center; font-family: "Kumbh Sans", sans-serif; line-height: 1em;}
+.logo{ max-width: 100% ;height: max(20vw, 7em); display: flex; align-self: center; object-fit: scale-down; z-index: 0;}
+.date{ color: #ffffff; font-size: max(2.5vw, 2em); font-weight: 400; margin: 3rem 0 2rem; text-align: center; font-family: "Kumbh Sans", sans-serif; line-height: 1em; z-index: 0;}
 
 /* Website Banner */
 .banner {position: relative; font-family: "Kumbh Sans", sans-serif; margin-top: 50px; display: flex; flex-direction: column;}
@@ -173,6 +173,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
   transition: transform 0.15s ease; 
   font-size: 0.6em;
   transform: rotate(-90deg);
+  z-index: 0;
 }
 
 .red {color: red;}
@@ -233,7 +234,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     width: 10em;
 }
 
-@media only screen and (max-width: 720px) {
+@media (max-width: 720px) {
 
 body {width: 90%; overflow-x: scroll;}
 
@@ -253,6 +254,6 @@ footer {margin-top: 5em;}
 
 }
 
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .navigation {margin-top: 0.2em; width: 100%; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.5em;}
 }
