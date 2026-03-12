@@ -34,7 +34,7 @@ body{
   font-family: "Kumbh Sans", sans-serif;
     font-size:1em;
     line-height:1.5em;
-    width: 70%;
+    width: 70vw;
     overflow-x: hidden;
     margin-inline: auto;
     margin-bottom: 2rem;
@@ -45,7 +45,7 @@ body{
 .br {display: block; position: fixed; right: 0; bottom: 0; max-width: 70%; z-index: -1; opacity: 50%;}
 
 .header {
-    font-weight: 300; font-size: 4rem; font-family: "Kumbh Sans", sans-serif; text-transform: uppercase; line-height: 4rem; margin-bottom: 2rem; margin-top: 7rem;
+    font-weight: 300; font-size: 4vw; font-family: "Kumbh Sans", sans-serif; text-transform: uppercase; line-height: 4rem; margin-bottom: 2rem; margin-top: 7rem;
 }
 
 .right {text-align: right;}
@@ -72,7 +72,7 @@ a:hover{color: #25FAD5; transition: 0.2s;}
 a:active{color: #ffffff;}
 h1,h2,h3,h4{ color: #ffffff; margin:1.5em 0em 1em 0em;font-family: "Kumbh Sans", sans-serif;}
 h1{font-size:3.5em;}
-h2{font-size:3.00em;}
+h2{font-size:3vw;}
 h3{font-size:1.67em;}
 h4{font-size:1.33em;}
 p{list-style:none; margin:0 auto 0 auto; text-align:justify; color: #ffffff; font-weight: 200;}
@@ -104,8 +104,8 @@ th,td{
     /*border: 1px solid black;*/
 }
 
-.logo{ max-width: 100% ;height: 250px; display: flex; align-self: center; object-fit: scale-down; }
-.date{ color: #ffffff; font-size: 3rem; font-weight: 400; margin: 3rem 0 2rem; text-align: center; font-family: "Kumbh Sans", sans-serif;}
+.logo{ max-width: 100% ;height: 20vw; display: flex; align-self: center; object-fit: scale-down; }
+.date{ color: #ffffff; font-size: 2.5vw; font-weight: 400; margin: 3rem 0 2rem; text-align: center; font-family: "Kumbh Sans", sans-serif;}
 
 /* Website Banner */
 .banner {position: relative; font-family: "Kumbh Sans", sans-serif; margin-top: 50px; display: flex; flex-direction: column;}
@@ -118,7 +118,7 @@ th,td{
 .year{color: #ffffff; font-size:0.67em; font-weight: lighter;}
 
 /* Navigation Links (Home, Registration, etc) */
-.navigation{margin-top: 1.5rem; font-size: 2rem; font-weight: 400; display: flex; flex-direction: row; text-align: center;}
+.navigation{margin-top: 1.5rem; font-size: 2.5vw; font-weight: 400; display: flex; flex-direction: row; text-align: center;}
 
 /* Sponsor Images */
 table.sponsors{width:800px;}
@@ -150,20 +150,20 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 .outlineRow {display: grid; grid-template:  auto/1fr 1fr; align-items: baseline;}
 .outlineTime {color: #ffffff; font-size: 2.5em; border-right: 4px solid white; padding: 1em 0.5em; grid-area: 0/0/1/1; text-align: right;}
-.outlineTitle {color: #ffffff; font-size: 2em; padding: 1em 0 01em 0.75em; grid-area: 1/0/2/1;}
+.outlineTitle {color: #ffffff; font-size: 2em; padding: 1em 0 0.1em 0.75em; grid-area: 1/0/2/1;}
 
 .OutlineRow2 {margin-bottom: 4em; display: flex;}
 .outlineTxt {color: #ffffff; font-size: 2em;}
 .Lvr {border-right: 3px solid white; padding-right: 0.5em; margin-right: 0.5em;}
 .Rvr {border-left: 3px solid white; padding-left: 0.5em; margin-left: 0.5em;}
 
-.bottom {margin-bottom: 2em;}
+.bottom {margin-bottom: 2em; }
 
-.detailBox {margin-top: 4em; position-area: center center;}
+.detailBox {margin-top: 4em;}
 
-.piece {color: #ffffff; font-size: 1.75em; line-height: 1.25em;}
+.piece {color: #ffffff; font-size: 2vw; line-height: 1.25em;}
 .author {font-weight: 200; font-size: 1em; display: inline;}
-.subHeading {margin-top: 0.2em; font-size: 0.75em; font-weight: 200;}
+.subHeading {margin-top: 0.2em; font-size: 1.5vw; font-weight: 200;}
 .details {margin-top: 1em; text-align: left; font-weight: 200; color: white;}
 .detailHr {display: flex; border: 0.5px solid white; margin-top: 1em; width: 50%;}
 
@@ -193,9 +193,22 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 
 .stickyBox {
-    display: flex; position: fixed; top: 2em; left: 2em;
-    flex-direction: column; gap: 0.25em;
-    width: auto;
+    display: flex;
+    position: fixed;
+    top: 2em;
+    left: 2em;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.menuToggle {
+    display: none;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
 }
 
 .concertNav {
@@ -208,9 +221,9 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 body {width: 90%; overflow-x: scroll;}
 
-.date {font-size: 1.25em; margin-top: 0;}
+.date {margin-top: 0;}
 .logo {margin: 0 0 1.5em; height: 7em;}
-.navigation {margin-top: 0.2em; font-size: 2em; width: 100%; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.5em;}
+.navigation {margin-top: 0.2em; width: 100%; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.5em;}
 
 .header {font-size: 2em; line-height: 1em; margin: 2em 0 0.5em; text-align: center;}
 p {font-size: 1em; font-weight: 200;}
@@ -221,5 +234,39 @@ footer {margin-top: 5em;}
 .img {height: 2em; margin: 0;}
 .logos {margin-bottom: 2em;}
 
+.bottom {font-size: 1.5em; line-height: 2em; margin: 2em 0 0.5em; text-align: center;}
+
+.piece {font-size: 1.25em;}
+.subHeading {font-size: 1em;}
+
 }
 
+
+
+@media (max-width: 1200px) {
+
+.stickyBox {
+    left: 0.5em;
+    top: 0.5em;
+}
+
+.menuToggle {
+    display: block;
+    background-color: #ffffff00;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+.menuItems {
+    display: none;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border-radius: 6px;
+}
+
+.stickyBox.open .menuItems {
+    display: flex;
+}
+}
