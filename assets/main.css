@@ -175,6 +175,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 }
 
 .red {color: red;}
+.thin {font-weight: 200;}
 
 .detailBox[open] .more {
   transform: rotate(0deg);
@@ -201,3 +202,4 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     font-weight: 200;
     width: 10em;
 }
+
