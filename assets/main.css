@@ -162,11 +162,11 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 .piece {color: #ffffff; font-size: clamp(1.5rem, 2.5vw, 2.5rem); line-height: 1.25em;}
 .author {font-weight: 300; font-size: 1em; display: inline;}
-.subHeading {margin-top: 0.2em; font-size: clamp(1rem, 2.5vw, 1.25rem); font-weight: 400;}
+.subHeading {margin-top: 0.2em; font-size: clamp(1rem, 2.5vw, 1.25rem); font-weight: 400; text-align: left;}
 .details {margin-top: 1em; text-align: left; font-weight: 300; color: white; font-size: 1em;}
 .detailHr {display: flex; border: 0.5px solid white; margin-top: 1em; width: 50%;}
 
-.link {text-decoration: underline; font-size: clamp(1.25rem, 2.5vw, 1.5rem); font-weight: 400;}
+.link {text-decoration: underline; font-weight: 400;}
 
 .more {margin-left: 0.5em; display: inline-flex;
   justify-content: center;
