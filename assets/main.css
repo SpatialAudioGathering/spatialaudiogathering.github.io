@@ -33,7 +33,7 @@ body{
   font-family: "Kumbh Sans", sans-serif;
     font-size:1em;
     line-height:1.5em;
-    padding: 0 5em;
+    padding: 0 clamp(1.5rem, 5vw, 5rem);
     overflow-x: hidden;
     margin-inline: auto;
     margin-bottom: 2rem;
@@ -104,10 +104,10 @@ th,td{
 }
 
 .logo{ max-width: 100% ;height: max(20vw, 7em); display: flex; align-self: center; object-fit: scale-down; z-index: 1; pointer-events: none;}
-.date{ color: #ffffff; font-size: max(2.5vw, 2em); font-weight: 400; margin: 3rem 0 2rem; text-align: center; font-family: "Kumbh Sans", sans-serif; line-height: 1em; z-index: 1; pointer-events: none;}
+.date{ color: #ffffff; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 400; margin: 3rem 0 2rem; text-align: center; font-family: "Kumbh Sans", sans-serif; line-height: 1em; z-index: 1; pointer-events: none;}
 
 /* Website Banner */
-.banner {position: relative; font-family: "Kumbh Sans", sans-serif; margin-top: 50px; display: flex; flex-direction: column; z-index: 1; pointer-events: none;}
+.banner {position: relative; font-family: "Kumbh Sans", sans-serif; margin-top: 50px; display: flex; flex-direction: column;}
 .top-left {font-size:5.33em; color: #ffffff; /*background: #FFF9F2;*/ text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
 .bottom-right {font-size:2.33em; color: #ffffff; line-height: 1.5em; width: auto; height: 50px; /*100px*/ padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; /*text-shadow: 0px 0px 6px #d0d0d0;*/}
 
@@ -148,8 +148,8 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 
 .outlineRow {display: grid; grid-template:  auto/1fr 1fr; align-items: baseline;}
-.outlineTime {color: #ffffff; font-size: max(2.5vw, 2em); padding: 1em 0.5em; grid-area: 0/0/1/1; text-align: right;}
-.outlineTitle {color: #ffffff; font-size:max(2vw, 1.5em); padding: 1em 0 0.1em 0.75em; grid-area: 1/0/2/1; font-weight: 200;}
+.outlineTime {color: #ffffff; font-size: clamp(1.4rem, 2.5vw, 2rem); padding: 1em 0.5em; grid-area: 0/0/1/1; text-align: right;}
+.outlineTitle {color: #ffffff; font-size: clamp(1.2rem, 2vw, 1.6rem); padding: 1em 0 0.1em 0.75em; grid-area: 1/0/2/1; font-weight: 200;}
 
 .OutlineRow2 {margin-bottom: 4em; display: flex;}
 .outlineTxt {color: #ffffff; font-size: 2em;}
@@ -160,9 +160,9 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 .detailBox {margin-top: 4em;}
 
-.piece {color: #ffffff; font-size: max(2vw, 1.25em); line-height: 1.25em;}
+.piece {color: #ffffff; font-size: clamp(1.1rem, 2vw, 1.4rem); line-height: 1.25em;}
 .author {font-weight: 200; font-size: 1em; display: inline;}
-.subHeading {margin-top: 0.2em; font-size: max(1.5vw, 1em); font-weight: 200;}
+.subHeading {margin-top: 0.2em; font-size: clamp(0.95rem, 1.5vw, 1.2rem); font-weight: 200;}
 .details {margin-top: 1em; text-align: left; font-weight: 200; color: white;}
 .detailHr {display: flex; border: 0.5px solid white; margin-top: 1em; width: 50%;}
 
@@ -172,7 +172,6 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
   transition: transform 0.15s ease; 
   font-size: 0.6em;
   transform: rotate(-90deg);
-  z-index: 0;
 }
 
 .arrow {margin-left: 0.2em; display: inline-flex;
@@ -203,17 +202,23 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     position: fixed;
     top: 2em;
     left: 4em;
+    z-index: 1000;
+}
+
+.menuBox {
+    position: absolute;
+    z-index: 1000;
 }
 
 .menuToggle {
     background: none;
     color: white;
     cursor: pointer;
-    font-size: 4em;
     list-style: none;
-    z-index: 150;
-position: relative;
-height: 0.8em;
+    position: relative;
+    height: 0.8em;
+    z-index: 1000;
+    font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .menuToggle::-webkit-details-marker {
@@ -225,12 +230,13 @@ height: 0.8em;
     flex-direction: column;
     gap: 0.25em;
     background-color: rgb(0, 102, 82);
-    z-index: 100;
     padding: 0.75em 1em;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
+    width: 10em;
 }
 
 .menuBox[open] .menuItems {
@@ -252,27 +258,23 @@ height: 0.8em;
 
 @media (max-width: 720px) {
 
-body {padding: 0 2em; overflow-x: scroll;}
+body {padding: 0 2em;}
 
-.date {margin-top: 0; font-size: 1.5em;}
+.date {margin-top: 0;}
 .logo {margin: 0 0 1.5em;}
 
-.header {line-height: 1.2em; margin: 2em 0 0.5em; text-align: center; font-size: 2em;}
-p {font-size: 1em; font-weight: 200; font-size: 1.1em;}
+.header {line-height: 1.2em; margin: 2em 0 0.5em; text-align: center;}
+p {font-size: 1.2em; font-weight: 200;}
 ul {width: 100%;}
 .indLi {list-style-type: none;}
 
-footer {margin-top: 5em;}
+footer {margin-top: 5em; z-index: 0;}
 .img {height: 2em; margin: 0;}
 .logos {margin-bottom: 2em;}
 
-.bottom {font-size: 1.5em; line-height: 2em; margin: 2em 0 0.5em; text-align: center;}
+.bottom {line-height: 2em; margin: 2em 0 0.5em; text-align: center;}
 
-.outlineTime { font-size: 1.5em; }
-.outlineTitle { font-size: 1.25em; }
-
-.menuToggle {font-size: 2em;}
-
+.menuItems {width: 14em;}
 }
 
 @media (max-width: 1200px) {
