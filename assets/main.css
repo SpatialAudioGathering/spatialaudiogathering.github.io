@@ -103,11 +103,11 @@ th,td{
     /*border: 1px solid black;*/
 }
 
-.logo{ max-width: 100% ;height: max(20vw, 7em); display: flex; align-self: center; object-fit: scale-down; z-index: 0;}
-.date{ color: #ffffff; font-size: max(2.5vw, 2em); font-weight: 400; margin: 3rem 0 2rem; text-align: center; font-family: "Kumbh Sans", sans-serif; line-height: 1em; z-index: 0;}
+.logo{ max-width: 100% ;height: max(20vw, 7em); display: flex; align-self: center; object-fit: scale-down; z-index: 1; pointer-events: none;}
+.date{ color: #ffffff; font-size: max(2.5vw, 2em); font-weight: 400; margin: 3rem 0 2rem; text-align: center; font-family: "Kumbh Sans", sans-serif; line-height: 1em; z-index: 1; pointer-events: none;}
 
 /* Website Banner */
-.banner {position: relative; font-family: "Kumbh Sans", sans-serif; margin-top: 50px; display: flex; flex-direction: column;}
+.banner {position: relative; font-family: "Kumbh Sans", sans-serif; margin-top: 50px; display: flex; flex-direction: column; z-index: 1; pointer-events: none;}
 .top-left {font-size:5.33em; color: #ffffff; /*background: #FFF9F2;*/ text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
 .bottom-right {font-size:2.33em; color: #ffffff; line-height: 1.5em; width: auto; height: 50px; /*100px*/ padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; /*text-shadow: 0px 0px 6px #d0d0d0;*/}
 
@@ -148,7 +148,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 
 .outlineRow {display: grid; grid-template:  auto/1fr 1fr; align-items: baseline;}
-.outlineTime {color: #ffffff; font-size: max(2.5vw, 2em); border-right: 2px solid white; padding: 1em 0.5em; grid-area: 0/0/1/1; text-align: right;}
+.outlineTime {color: #ffffff; font-size: max(2.5vw, 2em); padding: 1em 0.5em; grid-area: 0/0/1/1; text-align: right;}
 .outlineTitle {color: #ffffff; font-size:max(2vw, 1.5em); padding: 1em 0 0.1em 0.75em; grid-area: 1/0/2/1; font-weight: 200;}
 
 .OutlineRow2 {margin-bottom: 4em; display: flex;}
@@ -173,6 +173,13 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
   font-size: 0.6em;
   transform: rotate(-90deg);
   z-index: 0;
+}
+
+.arrow {margin-left: 0.2em; display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-90deg);
+  font-size: 0.75em;
 }
 
 .red {color: red;}
@@ -204,9 +211,9 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     cursor: pointer;
     font-size: 4em;
     list-style: none;
-    z-index: 15;
+    z-index: 150;
 position: relative;
-height: 0.7em;
+height: 0.8em;
 }
 
 .menuToggle::-webkit-details-marker {
@@ -218,7 +225,7 @@ height: 0.7em;
     flex-direction: column;
     gap: 0.25em;
     background-color: rgb(0, 102, 82);
-    z-index: 10;
+    z-index: 100;
     padding: 0.75em 1em;
     height: 100vh;
     position: fixed;
@@ -238,6 +245,10 @@ height: 0.7em;
     font-weight: 200;
     width: 10em;
 }
+
+.less {margin: 2.25em 0;}
+
+.progSplit {display: flex; flex-direction: row; width: 100%; justify-content: space-evenly;}
 
 @media (max-width: 720px) {
 
@@ -260,6 +271,9 @@ footer {margin-top: 5em;}
 .outlineTime { font-size: 1.5em; }
 .outlineTitle { font-size: 1.25em; }
 
+.menuToggle {font-size: 2em;}
+
+.progSplit {flex-direction: column; align-items: center;}
 }
 
 @media (max-width: 1200px) {
