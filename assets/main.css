@@ -220,7 +220,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     position: relative;
     height: 0.8em;
     z-index: 1000;
-    font-size: clamp(3rem, 4vw, 4rem);
+    font-size: clamp(4rem, 4vw, 4rem);
 }
 
 .menuToggle::-webkit-details-marker {
@@ -230,7 +230,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 .menuItems {
     display: none;
     flex-direction: column;
-    gap: clamp(0.75em, 3vw, 2.5em);
+    gap: clamp(1.75em, 3vw, 2.5em);
     background-color: rgb(0, 102, 82);
     padding: 0.75em 1em;
     height: 100vh;
@@ -275,8 +275,8 @@ footer {margin-top: 3em; z-index: 0;}
 
     .stickyBox {
     position: fixed;
-    top: 0.5em;
-    left: 0.5em;
+    top: 0.75em;
+    left: 0.65em;
     z-index: 1000;
 }
 
