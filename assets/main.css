@@ -160,10 +160,10 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 .detailBox {margin-top: 4em;}
 
-.piece {color: #ffffff; font-size: clamp(1.75rem, 3vw, 2rem); line-height: 1.25em;}
+.piece {color: #ffffff; font-size: clamp(1.5rem, 3vw, 1.75rem); line-height: 1.25em;}
 .author {font-weight: 300; font-size: 1em; display: inline;}
-.subHeading {margin-top: 0.2em; font-size: clamp(1.25rem, 2.5vw, 1.5rem); font-weight: 400;}
-.details {margin-top: 1em; text-align: left; font-weight: 300; color: white;}
+.subHeading {margin-top: 0.2em; font-size: clamp(1rem, 2.5vw, 1.25rem); font-weight: 400;}
+.details {margin-top: 1em; text-align: left; font-weight: 300; color: white; font-size: 1em;}
 .detailHr {display: flex; border: 0.5px solid white; margin-top: 1em; width: 50%;}
 
 .link {text-decoration: underline; font-size: clamp(1.25rem, 2.5vw, 1.5rem); font-weight: 400;}
