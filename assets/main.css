@@ -221,6 +221,11 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     height: 0.8em;
     z-index: 1000;
     font-size: clamp(4rem, 4vw, 4rem);
+    transition: transform 0.25s ease;
+}
+
+.menuBox[open] .menuToggle {
+    transform: rotate(90deg);
 }
 
 .menuToggle::-webkit-details-marker {
